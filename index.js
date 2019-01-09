@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
 })
 
 // ADD YOUR CONTROLLER HERE!!!
+const showsController = require('./controllers/showsController');
+app.use('/shows', showsController);
 
 app.listen(port, () => {
   console.log('---------------------------------------');
